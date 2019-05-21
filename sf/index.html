@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--指明当前页面的字符编码格式 是  utf-8 -->
+    <meta charset="utf-8">
+    <!--指明当前的页面在IE浏览器渲染的时候使用最新的渲染引擎来渲染-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--标准的视口设置-->
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>顺丰</title>
+    <!-- Bootstrap -->
+    <!--bootstrap 核心css文件  -->
+    <link href="lib/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <!--
+        在IE8以下都不支持 html5标签和媒体查询  引入两js插件
+        html5shiv 支持HTML5标签
+        respond  支持媒体查询  必须在http形式下访问才有用
+     -->
+    <!--[if lt IE 9]>
+    <script src="lib/html5shiv/html5shiv.min.js"></script>
+    <script src="lib/respond/respond.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="./css/index.css"/>
+</head>
+<body>
+    
+    <nav class="sf_topBar hidden-sm hidden-xs">
+        <div class="container">
+            <a href="index.html" class="col-md-1">
+                <img src="images/index.png" alt="">
+            </a>
+            <ul class="topleft col-md-8">
+                <li class="lileft">首页</li>
+                <li class="lileft">物流</li>
+                <li class="lileft"><a href="#">金融</a></li>
+                <li class="lileft">商业</li>
+                <li class="lileft"><a href="#">成功案例</a></li>
+                <li class="lileft">服务支持</li>
+                <li class="lileft">顺丰控股投资者关系</li>
+                <li class="lileft"><a href="#">关于我们</a></li>
+            </ul>
+            <ul class="topright col-md-1">
+                <li class="liright">
+                    <span class="glyphicon glyphicon-user"></span>    
+                    <a href="#">快速登陆/注册</a>
+                </li>
+                <li class="liright">CHINA</li>
+            </ul>
+        </div>
+    
+    
+    </nav>
+    <!--汉堡按钮
+    <nav class="navBar navBar-default" role="navigation">
+            <div class="container">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                                data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <div class="navBar-header">
+                        <a class="navbar-brand" href="index.html">
+                            <img src="images/index.png">
+                        </a>
+                        <h2>顺丰速运</h2>
+                        </div>
+                    
+                    <div class="collapse navbar-collapse" id="navbar-collapse">
+                        <ul>
+                            <li class="active"><a href="#">首页</a></li>
+                            <li>物流</li>
+                            <li><a href="#">金融</a></li>
+                            <li>商业</li>
+                            <li><a href="#">成功案例</a></li>
+                            <li>服务支持</li>
+                            <li>顺丰控股投资者关系</li>
+                            <li><a href="#">关于我们</a></li>
+                        </ul>
+                        <ul>
+                            <li>CHINA</li>
+                        </ul>
+                    </div>
+                    <div class="collapse navbar-collapse" id="example-navbar-collapse">
+        <ul class="nav navbar-nav">
+            <li class="active"><a href="#">iOS</a></li>
+            <li><a href="#">SVN</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                    Java <b class="caret"></b>
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">jmeter</a></li>
+                    <li><a href="#">EJB</a></li>
+                    <li><a href="#">Jasper Report</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#">分离的链接</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#">另一个分离的链接</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    </div>
+                </div>
+    </nav>
+-->
+<!--轮播图-->
+<div id="slidershow" class="carousel slide" data-ride="carousel">
+    <!--设置轮播计数器-->
+    <ol class="carousel-indicators">
+        <li class="active" data-target="#slidershow" data-slide-to="0"></li>
+        <li data-target="#slidershow" data-slide-to="1"></li>
+        <li data-target="#slidershow" data-slide-to="2"></li> 
+    </ol>
+    <!--设置轮播图片-->
+    <div class="carousel-inner">
+
+        <div class="item active">
+            <a href="#">
+                <img src="images/banner1.jpg" style="height:400px;margin:0 auto;">
+            </a>
+        </div>
+
+        <div class="item">
+            <a href="#">
+                <img src="images/banner2.png" style="height:400px;margin:0 auto;">
+            </a>
+        </div>
+        <div class="item">
+            <a href="#">
+                <img src="images/banner3.jpg" style="height:400px;margin:0 auto;">
+            </a>
+        </div>
+
+    </div>
+    <a class="left carousel-control" href="#slidershow" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left"></span>
+    </a>
+    <a class="right carousel-control" href="#slidershow" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right"></span>
+    </a>
+</div>
+<div class="sf_info">
+    <div class="container">
+        <div class="row">
+                <table rules="cols" style="width:100%;padding:10px;text-align:center;">
+                        <tr>
+                            <td>
+                                <a href="#">
+                                    <span class="glyphicon glyphicon-search"></span>运单追踪   
+                                </a>
+                            </td>
+                            <td>
+                                <a href="#">
+                                    <span class="glyphicon glyphicon-envelope"></span>我要寄件 
+                                </a>
+                            </td>
+                            <td>
+                                <a href="#" >
+                                    <span class="glyphicon glyphicon-yen"></span> 运费时效查询
+                                </a>
+                            </td>
+                            <td>
+                                <a href="#">
+                                    <span class="glyphicon glyphicon-map-marker"></span> 服务网点查询
+                                </a>
+                            </td>
+                            <td>
+                                <a href="#" >
+                                    <span class="glyphicon glyphicon-globe"></span> 收寄范围查询
+                                </a>
+                            </td>
+                            <td>
+                                <a href="#">
+                                    <span class="glyphicon glyphicon-comment"></span> 在线客服
+                                </a>
+                            </td>
+                        </tr>
+                    </table>        
+               
+        </div>
+    </div>
+</div>
+
+<div class="sf_product">
+    <h2>顺丰全业务介绍</h2>
+    <p>基于物流，融通金融，流通商业</p>
+    <ul class="nav nav-pills"> 
+        <li role="presentation" class="active"><a href="#logistics" data-toggle="pill" role="tab">物流</a></li>
+        <li role="presentation"><a href="#finance" data-toggle="pill" role="tab">金融</a></li>
+        <li role="presentation"><a href="#business" data-toggle="pill" role="tab">商业</a></li>
+    </ul>
+    <div class="tab-content">
+        <div class="tab-pane active" id="logistics">
+            <div class="inline-div">
+                <div><img src="images/kuaidifuwu.jpg" alt=""></div>
+                <div>
+                    <span>快递服务</span>
+                    <p>顺丰依托自有丰富运力资源，通过多项不同的快递产品和增值服务，来满足客户多样化、个性化的寄件需求。</p>
+                </div>
+            </div>
+            <div class="inline-div">
+                <div><img src="images/lengyunfuwu.jpg" alt=""></div>
+                    <div>
+                        <span>冷运服务</span>
+                        <p>顺丰依托强大的冷链运输网和温控管理系统，为食品&amp;医药冷链客户提供专业的冷运服务。</p>
+                    </div>
+                </div>
+            </div>
+        <div class="tab-pane" id="finance">
+            <div class="inline-div">
+                <div><img src="images/xindaiyewu.jpg" alt=""></div>
+                <div>
+                    <span>信贷业务</span>
+                    <p>基于顺丰的物流、仓储、速运、冷运、商业、支付结算等多元业务场景，促进物流、信息流、资金流“三流合一”，建立产业链金融服务体系，提供“物流+金融”综合解决方案。</p>
+                </div>    
+            </div>
+            <div class="inline-div">
+                <div><img src="images/zongehezhifu.png" alt=""></div>
+                <div>
+                    <span>综合支付</span>
+                    <p>顺丰金融作为第三方支付牌照拥有者，资金流服务包括钱包支付、POS收单、聚合支付、代收付、认证支付、预付费卡（速运通卡），服务范围覆盖中国境内所有地区。</p>
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane" id="business">
+            <div class="inline-div">
+                <div><img src="images/wangshangshangcheng.jpg" alt=""></div>																			
+                <div>
+                    <span>顺丰优选网上商城</span> 
+                    <p>甄选全球优质美食，依托顺丰物流，成为生鲜食品配送范围最广的电商平台</p>
+                </div>
+            </div>
+            <div class="inline-div">	
+                <div><img src="images/mendian.jpg" alt=""></div>
+                <div>
+                    <span>顺丰优选门店</span>
+                    <p>立足社区，提供居民日常所需的优质美食及一小时送货上门、快递收发等服务。</p>
+                </div>																		
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="share">    
+    <div class="s1">
+        <h2 >成功案例</h2>
+        <p>每一时刻，都有无数的客户托付与期待被成功交付，顺丰与前瞻者同行，与成就者共成就</p>
+        <a href="#" class="reviewall">查看全部  &gt;</a>
+    </div>
+    <div class="s2">    
+        <div class="re col-md-2 col-sm-4">
+            <a href="#" class="swiper-a-1">
+                <div class="t-img">									
+                   <img src="images/red-t-img-1.png" alt="" class="red">
+                    
+                </div>
+                <p>3C电子行业</p>
+            </a>
+        </div>
+        <div class="re col-md-2 col-sm-4">
+            <a href="#" class="swiper-a-2">
+                <div class="t-img">	
+                    <img src="images/red-t-img-2.png" alt="" class="red">								    
+                </div>
+                <p>医疗行业</p>
+            </a>
+        </div>
+        <div class="re col-md-2 col-sm-4">
+            <a href="#" class="swiper-a-3">
+                <div class="t-img">									
+                    <img src="images/red-t-img-3.png" alt="" class="red">
+                </div>
+                <p>生鲜行业</p>
+            </a>
+        </div>
+        <div class="re col-md-2 col-sm-4">
+            <a href="#" class="swiper-a-4">
+                <div class="t-img">									
+                    <img src="images/red-t-img-4.png" alt="" class="red">   
+                </div>
+                <p>快消行业</p>
+            </a>
+        </div>    
+    </div>
+</div>
+<div class="fenge">
+    
+</div>
+<div class="footer">
+    <div class="fcontainer">
+        <div class="leftf">
+            <table>
+                <tr>
+                    <td style="color: white">
+                        <p class="title"><a>物流</a></p>
+                        <ul class="list">
+                            <li> <a href="#">快递服务</a></li>
+                            <li> <a href="#">冷运服务</a></li>
+                            <li> <a href="#">仓储服务</a></li>
+                        </ul>
+                    </td>
+                    <td>
+                        <p class="title"><a>金融</a></p>
+                        <ul class="list"> 
+                            <li><a href="#">财富管理</a></li>
+                            <li><a href="#">资产管理</a></li>
+                            <li><a href="#">综合支付</a></li>
+                        </ul> 				                 
+                    </td>
+                    <td>
+                        <p class="title"><a>商业</a></p>
+                        <ul class="list"> 
+                            <li><a href="#">顺丰优选网上商城</a></li>
+                            <li><a href="#">顺丰优选门店</a></li>
+                        </ul> 				                 
+                    </td>
+                    <td>
+                        <p class="title"><a>成功案例</a></p>
+                        <ul class="list"> 								
+                            <li><a href="#">3C电子行业</a></li>
+                            <li><a href="#">医疗行业</a></li>
+                            <li><a href="#">生鲜行业</a></li>
+                            <li><a href="#">快消行业</a></li>
+                        </ul> 
+                    </td>
+                    <td>
+                        <p class="title"><a>服务支持</a></p>
+                        <ul class="list">
+                            <li><a href="#">我要寄件</a></li>
+                            <li><a href="#">运单追踪</a></li>
+                            <li><a href="#">运费时效查询</a></li>
+                            <li><a href="#">收寄范围查询</a></li>
+                            <li><a href="#">服务网点查询</a></li>
+                            <li><a href="#">收寄标准查询</a></li>
+                            <li><a href="#">更多内容查询</a></li>
+                        </ul>
+                    </td>
+                    <td>
+                        <p class="title"><a>顺丰控股投资者关系</a></p>
+                        <ul class="list"> 
+                            <li><a href="">公司治理</a></li>
+                            <li><a href="">公司公告</a></li>
+                            <li><a href="">定期报告</a></li>
+                            <li><a href="">投资者联络</a></li>
+                            <li><a href="">投资者关系日历</a></li>
+                        </ul> 
+                    </td>
+                    <td>
+                        <p class="title"><a>联系我们</a></p>
+                        <ul class="list">
+                            <li><a>客服专线95338 </a></li>
+                            <li><a>客户服务热线</a></li>
+                            <li><a>合作咨询</a></li>
+                            <li><a>在线客服</a></li>
+                        </ul>
+                    </td>
+                </tr>
+                </table>
+            </div>
+            <div class="rightf">
+                <table class="chat">
+                    <tr>
+                        <td colspan="6">马上联系我们</td> 
+                    </tr>
+                    <tr>
+                        <td colspan="2">新浪微博</td>
+                        <td colspan="2">微信</td>
+                        <td colspan="2">在线客服</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+   
+    
+    <div class="clearfix">
+        <div class="f1">
+            <table class="policy">
+                <tr>
+                    <td><a href="">使用条款</a></td>
+                    <td><a href="">服务网络</a></td>
+                    <td><a href="">丰桥平台</a></td>
+                    <td><a href="">隐私政策</a></td>
+                </tr>
+            </table>
+        </div>
+        <div class="f2">
+            <table class="copyright">
+                <tr>
+                    <td><a>©&nbsp;2017&nbsp;&nbsp;顺丰速运&nbsp;&nbsp;版权所有&nbsp;&nbsp;&nbsp;&nbsp;</a></td>
+                    <td><a>粤&nbsp;&nbsp;ICP&nbsp;&nbsp;备08034243号</a></td>
+                </tr>
+            </table>
+        </div>
+</div>
+
+</div>        
+ 
+
+
+
+    <!--bootstrap是依赖jquery的-->
+    <script src="lib/jquery/jquery.min.js"></script>
+    <!--bootstrap的核心js文件-->
+    <script src="lib/bootstrap/js/bootstrap.js"></script>
+    <!--underscore-->
+    <script src="lib/underscore/underscore-min.js"></script>
+    <!--自己的js-->
+    
+</body>
+</html>
